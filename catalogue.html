@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Catalogue — GP.Network | Groupe la Passerelle Network</title>
+<meta content="Catalogue des équipements, matériels et accessoires informatiques proposés par Groupe la Passerelle Network : postes de travail, réseau, sécurité, accessoires." name="description"/>
+<link href="images/logo.jpeg" rel="icon"/>
+<link href="/catalogue.html" rel="canonical"/>
+<link href="css/style.css" rel="stylesheet"/>
+<style>
+.prod-thumb{width:100%;height:220px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#f8f8f8}
+.prod-image{width:100%;height:100%;object-fit:contain;transition:transform .3s}
+.prod-card:hover .prod-image{transform:scale(1.05)}
+</style></head>
+<body>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html">
+<img alt="GP.Network — Groupe la Passerelle Network" src="images/logo.jpeg"/>
+<span class="brand-text">GP.Network<span>Groupe la Passerelle Network</span></span>
+</a>
+<nav aria-label="Navigation principale" class="nav-desktop">
+<a href="index.html">Accueil</a>
+<a href="services.html">Services</a>
+<a class="active" href="catalogue.html">Catalogue</a>
+<a href="a-propos.html">À propos</a>
+<a href="contact.html">Contact</a>
+</nav>
+<a class="nav-cta desktop-only" href="contact.html">Demander un devis</a>
+<button aria-expanded="false" aria-label="Ouvrir le menu" class="nav-toggle">
+<span></span><span></span><span></span>
+</button>
+</div>
+<nav aria-label="Navigation mobile" class="nav-mobile">
+<a href="index.html">Accueil</a>
+<a href="services.html">Services</a>
+<a href="catalogue.html">Catalogue</a>
+<a href="a-propos.html">À propos</a>
+<a href="contact.html">Contact</a>
+<a class="btn btn-primary nav-cta" href="contact.html">Demander un devis</a>
+</nav>
+</header>
+<main>
+<section class="page-head">
+<div class="wrap">
+<p class="breadcrumb"><a href="index.html">Accueil</a> / Catalogue</p>
+<h1>Catalogue produits</h1>
+<p>Équipements, matériels et accessoires informatiques. Consultation en ligne uniquement — pour commander, contactez-nous ou demandez un devis.</p>
+</div>
+</section>
+<section class="section">
+<div class="wrap">
+<div class="cat-layout">
+<!-- ============ FILTRES ============ -->
+<aside aria-label="Filtres produits" class="filters">
+<div class="filter-group">
+<h4>Catégorie</h4>
+<label class="filter-opt"><input name="filter-cat" type="checkbox" value="postes"/> Postes de travail</label>
+<label class="filter-opt"><input name="filter-cat" type="checkbox" value="reseau"/> Réseau</label>
+<label class="filter-opt"><input name="filter-cat" type="checkbox" value="securite"/> Sécurité</label>
+<label class="filter-opt"><input name="filter-cat" type="checkbox" value="accessoires"/> Accessoires</label>
+</div>
+<div class="filter-group">
+<h4>Marque</h4>
+<label class="filter-opt"><input name="filter-brand" type="checkbox" value="dell"/> Dell</label>
+<label class="filter-opt"><input name="filter-brand" type="checkbox" value="hp"/> HP</label>
+<label class="filter-opt"><input name="filter-brand" type="checkbox" value="tplink"/> TP-Link</label>
+<label class="filter-opt"><input name="filter-brand" type="checkbox" value="hikvision"/> Hikvision</label>
+<label class="filter-opt"><input name="filter-brand" type="checkbox" value="logitech"/> Logitech</label>
+</div>
+<div class="filter-group">
+<h4>Prix (FCFA)</h4>
+<div class="price-range">
+<input id="price-min" placeholder="Min" type="number"/>
+<input id="price-max" placeholder="Max" type="number"/>
+</div>
+</div>
+</aside>
+<!-- ============ RÉSULTATS ============ -->
+<div>
+<div class="results-bar">
+<span><span id="results-count">9</span> produits</span>
+<select aria-label="Trier les produits" class="sort-select" id="sort-select">
+<option value="default">Tri par défaut</option>
+<option value="price-asc">Prix croissant</option>
+<option value="price-desc">Prix décroissant</option>
+<option value="name">Nom (A–Z)</option>
+</select>
+</div>
+<div class="prod-grid" id="catalogue-grid">
+<a class="prod-card" data-brand="dell" data-cat="postes" data-name="Ordinateur portable Pro 15" data-price="890000" href="produit.html">
+<div class="prod-thumb"><img alt="Ordinateur portable Pro 15" class="prod-image" src="images/dell-pro15.jpg"/></div>
+<div class="prod-body">
+<p class="prod-cat">Postes de travail · Dell</p>
+<p class="prod-name">Ordinateur portable Pro 15"</p>
+<div class="prod-foot"><span class="prod-price">890 000 FCFA</span><span class="prod-stock">En stock</span></div>
+</div>
+</a>
+<a class="prod-card" data-brand="hp" data-cat="postes" data-name="Ordinateur de bureau Essentiel" data-price="540000" href="produit.html">
+<div class="prod-thumb"><img alt="Ordinateur de bureau Essentiel" class="prod-image" src="images/hp-bureau.jpg"/></div>
+<div class="prod-body">
+<p class="prod-cat">Postes de travail · HP</p>
+<p class="prod-name">Ordinateur de bureau Essentiel</p>
+<div class="prod-foot"><span class="prod-price">540 000 FCFA</span><span class="prod-stock">En stock</span></div>
+</div>
+</a>
+<a class="prod-card" data-brand="tplink" data-cat="reseau" data-name="Routeur professionnel Wi-Fi 6" data-price="175000" href="produit.html">
+<div class="prod-thumb"><img alt="Routeur professionnel Wi-Fi 6" class="prod-image" src="images/routeur-wifi6.jpg"/></div>
+<div class="prod-body">
+<p class="prod-cat">Réseau · TP-Link</p>
+<p class="prod-name">Routeur professionnel Wi-Fi 6</p>
+<div class="prod-foot"><span class="prod-price">175 000 FCFA</span><span class="prod-stock">En stock</span></div>
+</div>
+</a>
+<a class="prod-card" data-brand="tplink" data-cat="reseau" data-name="Switch 24 ports" data-price="65000" href="produit.html">
+<div class="prod-thumb"><img alt="Switch 24 ports" class="prod-image" src="images/switch-24ports.jpg"/></div>
+<div class="prod-body">
+<p class="prod-cat">Réseau · TP-Link</p>
+<p class="prod-name">Switch 24 ports Gigabit</p>
+<div class="prod-foot"><span class="prod-price">65 000 FCFA</span><span class="prod-stock">En stock</span></div>
+</div>
+</a>
+<a class="prod-card" data-brand="hikvision" data-cat="securite" data-name="Caméra IP extérieure 4K" data-price="98000" href="produit.html">
+<div class="prod-thumb"><img alt="Caméra IP extérieure 4K" class="prod-image" src="images/camera-4k.jpg"/></div>
+<div class="prod-body">
+<p class="prod-cat">Sécurité · Hikvision</p>
+<p class="prod-name">Caméra IP extérieure 4K</p>
+<div class="prod-foot"><span class="prod-price">98 000 FCFA</span><span class="prod-stock">En stock</span></div>
+</div>
+</a>
+<a class="prod-card" data-brand="hikvision" data-cat="securite" data-name="Kit vidéosurveillance 4 caméras" data-price="420000" href="produit.html">
+<div class="prod-thumb"><img alt="Kit vidéosurveillance 4 caméras" class="prod-image" src="images/kit-video.jpg"/></div>
+<div class="prod-body">
+<p class="prod-cat">Sécurité · Hikvision</p>
+<p class="prod-name">Kit vidéosurveillance 4 caméras</p>
+<div class="prod-foot"><span class="prod-price">420 000 FCFA</span><span class="prod-stock out">Sur commande</span></div>
+</div>
+</a>
+<a class="prod-card" data-brand="logitech" data-cat="accessoires" data-name="Clavier et souris sans fil" data-price="28000" href="produit.html">
+<div class="prod-thumb"><img alt="Clavier et souris sans fil" class="prod-image" src="images/clavier-souris.jpg"/></div>
+<div class="prod-body">
+<p class="prod-cat">Accessoires · Logitech</p>
+<p class="prod-name">Clavier et souris sans fil</p>
+<div class="prod-foot"><span class="prod-price">28 000 FCFA</span><span class="prod-stock">En stock</span></div>
+</div>
+</a>
+<a class="prod-card" data-brand="logitech" data-cat="accessoires" data-name="Webcam Full HD" data-price="45000" href="produit.html">
+<div class="prod-thumb"><img alt="Webcam Full HD" class="prod-image" src="images/webcam.jpg"/></div>
+<div class="prod-body">
+<p class="prod-cat">Accessoires · Logitech</p>
+<p class="prod-name">Webcam Full HD</p>
+<div class="prod-foot"><span class="prod-price">45 000 FCFA</span><span class="prod-stock">En stock</span></div>
+</div>
+</a>
+<a class="prod-card" data-brand="hp" data-cat="accessoires" data-name="Onduleur 1000VA" data-price="120000" href="produit.html">
+<div class="prod-thumb"><img alt="Onduleur 1000VA" class="prod-image" src="images/onduleur.jpg"/></div>
+<div class="prod-body">
+<p class="prod-cat">Accessoires · HP</p>
+<p class="prod-name">Onduleur 1000VA</p>
+<div class="prod-foot"><span class="prod-price">120 000 FCFA</span><span class="prod-stock">En stock</span></div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-top">
+<div>
+<div class="footer-brand">
+<img alt="GP.Network" src="images/logo.jpeg"/>
+<span class="footer-brand-text">GP.Network</span>
+</div>
+<p class="footer-desc">Groupe la Passerelle Network accompagne particuliers, professionnels, entreprises et collectivités sur l'ensemble de leurs besoins informatiques.</p>
+</div>
+<div class="footer-col">
+<h4>Navigation</h4>
+<a href="index.html">Accueil</a>
+<a href="services.html">Services</a>
+<a href="catalogue.html">Catalogue</a>
+<a href="a-propos.html">À propos</a>
+<a href="contact.html">Contact</a>
+</div>
+<div class="footer-col">
+<h4>Services</h4>
+<a href="services.html#logiciels">Conception logicielle</a>
+<a href="services.html#reseau">Réseau &amp; télécoms</a>
+<a href="services.html#formations">Formations</a>
+<a href="services.html#vente">Vente d'équipements</a>
+</div>
+<div class="footer-col">
+<h4>Contact</h4>
+<p>Pointe-Noire, République du Congo</p>
+<a href="mailto:contact@gp-network.cg">contact@gp-network.cg</a>
+<a href="tel:+242 06 876 6405">+242 06 876 6405</a>
+</div>
+</div>
+<div class="wrap footer-bottom">
+<span>© 2026 Groupe la Passerelle Network. Tous droits réservés.</span>
+<a href="mentions-legales.html">Mentions légales &amp; RGPD</a>
+</div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

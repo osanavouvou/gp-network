@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — GP.Network | Groupe la Passerelle Network</title>
+<meta name="description" content="Contactez Groupe la Passerelle Network pour un devis ou une demande d'information : formulaire, adresse et horaires.">
+<link rel="icon" href="images/logo.jpeg">
+<link rel="canonical" href="/contact.html">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpeg" alt="GP.Network — Groupe la Passerelle Network">
+      <span class="brand-text">GP.Network<span>Groupe la Passerelle Network</span></span>
+    </a>
+    <nav class="nav-desktop" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <a href="contact.html" class="nav-cta desktop-only">Demander un devis</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" aria-label="Navigation mobile">
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Services</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary nav-cta">Demander un devis</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="breadcrumb"><a href="index.html">Accueil</a> / Contact</p>
+      <h1>Parlons de votre projet</h1>
+      <p>Devis, question technique ou simple prise de contact : remplissez le formulaire, notre équipe revient vers vous sous 48h ouvrées.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="contact-grid">
+
+        <!-- ============ FORMULAIRE ============ -->
+        <div data-reveal>
+          <!--
+            Envoi via service externe (aucun backend requis) :
+            remplacer YOUR_FORM_ID par l'identifiant Formspree du client,
+            ou pointer vers Netlify Forms si l'hébergement est Netlify.
+          -->
+          <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="nom">Nom complet *</label>
+                <input type="text" id="nom" name="nom" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="telephone">Téléphone *</label>
+                <input type="tel" id="telephone" name="telephone" required autocomplete="tel">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="form-field">
+              <label for="objet">Objet de la demande *</label>
+              <select id="objet" name="objet" required>
+                <option value="">Sélectionnez un objet</option>
+                <option value="devis-service">Devis — Service</option>
+                <option value="devis-materiel">Devis — Matériel</option>
+                <option value="support">Support / maintenance</option>
+                <option value="formation">Formation</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <label class="consent">
+              <input type="checkbox" required>
+              <span>J'accepte que mes informations soient utilisées pour traiter ma demande, conformément à la <a href="mentions-legales.html#rgpd" style="text-decoration:underline;">politique de confidentialité</a>. *</span>
+            </label>
+
+            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+            <p id="form-status" class="form-note" role="status"></p>
+            <p class="form-note">Ce formulaire est protégé contre le spam. Les champs marqués * sont obligatoires.</p>
+          </form>
+        </div>
+
+        <!-- ============ INFOS ============ -->
+        <div data-reveal>
+          <div class="info-card">
+            <h4>Adresse</h4>
+            <p>Groupe la Passerelle Network</p>
+            <p>Pointe-Noire, République du Congo</p>
+          </div>
+          <div class="info-card">
+            <h4>Horaires</h4>
+            <p>Lundi – Vendredi : 8h00 – 17h30</p>
+            <p>Samedi : 9h00 – 13h00</p>
+          </div>
+          <div class="info-card">
+            <h4>Coordonnées</h4>
+            <p><a href="mailto:contact@gp-network.cg">contact@gp-network.cg</a></p>
+            <p><a href="tel:+242000000000">+242 00 000 00 00</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <div>
+      <div class="footer-brand">
+        <img src="images/logo.jpeg" alt="GP.Network">
+        <span class="footer-brand-text">GP.Network</span>
+      </div>
+      <p class="footer-desc">Groupe la Passerelle Network accompagne particuliers, professionnels, entreprises et collectivités sur l'ensemble de leurs besoins informatiques.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="services.html#logiciels">Conception logicielle</a>
+      <a href="services.html#reseau">Réseau &amp; télécoms</a>
+      <a href="services.html#formations">Formations</a>
+      <a href="services.html#vente">Vente d'équipements</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Pointe-Noire, République du Congo</p>
+      <a href="mailto:contact@gp-network.cg">contact@gp-network.cg</a>
+      <a href="tel:+242 06 876 6405">+242 06 876 6405</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Groupe la Passerelle Network. Tous droits réservés.</span>
+    <a href="mentions-legales.html">Mentions légales &amp; RGPD</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
